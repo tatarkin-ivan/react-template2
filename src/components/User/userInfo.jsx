@@ -1,10 +1,11 @@
-import WorkSkill from "./workSkill";
-import Product from "./Product/product";
+import WorkSkill from "../workSkill";
+import Product from "../Product/product";
+import "./userInfo.css";
 
 function UserInfo({data}){
     console.log(data);
 
-    const Pets = [{'name': 'cat', 'price': 200}, {'name': 'dog', 'price': 400}, {'name': 'snake', 'price': 1000}];
+    const Pets = [{'name': 'cat', 'price': 200, 'className': 'active'}, {'name': 'dog', 'price': 400}, {'name': 'snake', 'price': 1000}];
     const Toys = [{'name': 'ball', 'price': 200}, {'name': 'doll', 'price': 400}, {'name': 'baloon', 'price': 1000}];
 
 

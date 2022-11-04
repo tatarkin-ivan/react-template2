@@ -1,4 +1,4 @@
-import UserInfo from "./components/userInfo";
+import UserInfo from "./components/User/userInfo";
 
 function App() {
   const workSkill = ["shop","fabric","school","factory","institute","restaurant","veterinary clinic"];
