@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import UserInfo from "./components/userInfo";
 
 function App() {
+  const workSkill = ["shop","fabric","school","factory","institute","restaurant","veterinary clinic"];
+  const homePets =  ["cat","dog","mouse","snake"];
+  const user = {
+    firstName: "Vanya",
+    age: 39,
+    gender: "men",
+    workSkill: workSkill,
+    homePets: homePets
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UserInfo data={user}/>
+    </>
   );
 }
 
-export default App;
+function Application(){
+  
+  return(
+      [
+        <h2 data={0} key={0}>Application</h2>,
+        <h2 data={1} key={1}>Application</h2>
+      ] 
+  );
+}
+
+export {App, Application};
